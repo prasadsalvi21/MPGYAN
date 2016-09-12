@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ouch.mpgyan"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_mpgyan"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="com.ouch.mpgyan.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.HistoricalSearchActivity"
+            android:label="@string/title_activity_historical_search"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity" 
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.HistoricalListActivity"
+            android:label="@string/title_activity_historical_list"
+            android:parentActivityName="com.ouch.mpgyan.HistoricalSearchActivity" 
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.HistoricalSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.HistoricalResultActivity"
+            android:label="@string/title_activity_historical_result"
+            android:parentActivityName="com.ouch.mpgyan.HistoricalSearchActivity" 
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.HistoricalSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.VitalStatsActivity"
+            android:label="@string/title_activity_vital_stats"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.BillInfoActivity"
+            android:label="@string/title_activity_bill_info"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.BillListActivity"
+            android:label="@string/title_activity_bill_list"
+            android:parentActivityName="com.ouch.mpgyan.BillInfoActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.BillInfoActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.BillResultActivity"
+            android:label="@string/title_activity_bill_result"
+            android:parentActivityName="com.ouch.mpgyan.BillInfoActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.BillInfoActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.LiveFeedActivity"
+            android:label="@string/title_activity_live_feed"
+            android:parentActivityName="com.ouch.mpgyan.MainActivity" 
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ouch.mpgyan.NewMpActivity"
+            android:label="@string/title_activity_new_mp" 
+           android:parentActivityName="com.ouch.mpgyan.MainActivity" 
+           android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ouch.mpgyan.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

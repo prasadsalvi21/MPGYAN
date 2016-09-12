@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/B_Bno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+         android:layout_gravity="left"
+        android:textSize="16sp"
+        android:typeface="serif"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/B_Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:textSize="16sp" 
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/B_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" 
+        android:textIsSelectable="true" 
+         android:layout_gravity="left"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/B_Ministry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" 
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/B_ActNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true"
+         />
+
+    <TextView
+        android:id="@+id/B_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="16sp" 
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/B_Status_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#008000"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/B_Status_Pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/B_Status_Assent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFA500"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/B_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="16sp" 
+        android:typeface="serif"
+         android:layout_gravity="left"
+         android:textColor="#0000A0"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/B_Status_Withdrawn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#0000A0"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/B_Status_Lapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/B_Status_Negativated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#808080"
+        android:typeface="serif"
+         android:layout_gravity="left"
+        android:textIsSelectable="true" />
+
+</LinearLayout>

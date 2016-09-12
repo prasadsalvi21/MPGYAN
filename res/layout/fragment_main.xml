@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ouch.mpgyan.MainActivity$PlaceholderFragment"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ >
+
+
+    <TextView
+        android:id="@+id/current_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="10dp"
+        android:text="@string/current_data"
+        android:textColor="#EE9933"
+        android:typeface="serif"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/goToResults"
+      android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/getElectionResults"
+        android:typeface="serif"
+		android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"  
+        android:textColor="#138808"
+        android:layout_below="@id/current_data"
+        />
+      <Button
+        android:id="@+id/liveFeedSubmit"
+         android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/clickForLiveFeed"
+        android:typeface="serif"
+		android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+          android:textStyle="bold"  
+          android:textColor="#138808"
+        android:requiresFadingEdge="horizontal" 
+                android:layout_below="@id/goToResults"
+          />
+     <Button
+        android:id="@+id/goToVitalStats"
+       android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vitalStatsButton"
+        android:typeface="serif"
+		android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+          android:textStyle="bold"  
+          android:textColor="#138808"
+        android:requiresFadingEdge="horizontal" 
+        android:layout_below="@id/liveFeedSubmit"
+          />
+
+     <Button
+        android:id="@+id/goToBillSearch"
+          android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/billSearchButton"
+        android:typeface="serif"
+		android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+          android:textStyle="bold"  
+          android:textColor="#138808"
+        android:requiresFadingEdge="horizontal" 
+              android:layout_below="@id/goToVitalStats"
+          />
+          <Button
+        android:id="@+id/goToHistoricalSearch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/historicalSearchButton"
+        android:typeface="serif"
+		android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+          android:textStyle="bold"  
+          android:textColor="#138808"
+        android:requiresFadingEdge="horizontal" 
+          android:layout_below="@id/goToBillSearch"
+          />
+   
+
+</RelativeLayout>
+</ScrollView>

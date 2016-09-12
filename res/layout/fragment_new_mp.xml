@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ouch.mpgyan.NewMpActivity$PlaceholderFragment"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ >
+
+
+ <TextView
+          android:id="@+id/result_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="10dp"
+        android:textColor="#EE9933"
+        android:typeface="serif"
+       android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+        
+    <Spinner
+        android:id="@+id/criteria_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/criteria_arrays"
+        android:prompt="@string/country_prompt"
+        android:textColor="#0099ff"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"  
+        android:layout_below="@id/result_status_text"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/main_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+           android:textColor="#000000"
+        android:textSize="16sp" 
+        android:layout_below="@id/criteria_spinner" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"  
+        android:textColor="#138808"
+         android:drawableLeft="@drawable/ic_action_search"
+         android:layout_below="@id/main_autocomplete"
+        />
+  <TextView
+          android:id="@+id/comment_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+        android:textColor="#EE9933"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnSubmit" />
+    <TextView
+          android:id="@+id/comment_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+        android:textColor="#138808"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold" 
+        android:layout_below="@id/comment_1"/>
+      <TextView
+          android:id="@+id/comment_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+        android:textColor="#EE9933"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/comment_2" />
+        <TextView
+          android:id="@+id/comment_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+        android:textColor="#138808"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/comment_3" />
+</RelativeLayout>
+</ScrollView>
